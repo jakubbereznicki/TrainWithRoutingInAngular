@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor = "let art of articles">
+    <h2 class="inOneLine"> {{ art.title }} </h2>
+    <a [routerLink]="['/artykul/' + art.id]" class="inOneLine">Pokaż szczegóły</a>
+      <div>
+        <p>{{ art.text }}</p>
+      </div>
+  </li>
+</ul>
